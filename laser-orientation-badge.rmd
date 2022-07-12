@@ -302,8 +302,8 @@ glimpsed at the names of all of the variables.
 
 ```{r}
 d |> 
-  select(student_id, FinalGradeCEMS) |> 
-  arrange(desc(FinalGradeCEMS))
+  select(student_id, TimeSpent) |> 
+  arrange(desc(TimeSpent))
 ```
 
 ### Reach 1 🎉
@@ -416,7 +416,7 @@ m2 <- lm(FinalGradeCEMS ~ TimeSpent + subject + Gender, data = d)
 summary(m2)
 ```
 
-## 5. COMMUNICATE 
+## 5. COMMUNICATE
 
 Great job! Once you've finished your work, Upon doing so, you should see
 a new `laser-orientation-badge.html`.
