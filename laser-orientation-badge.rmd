@@ -255,9 +255,9 @@ d |>
 
 ##### [**Your Turn**]{style="color: green;"} **⤵**
 
-In the next code chunk, change the cut-off from 70% to some other
-value - larger or smaller (maybe much larger or smaller - feel free to
-play around with the code a bit!).
+In the next code chunk, change the cut-off from 70% to some other value
+- larger or smaller (maybe much larger or smaller - feel free to play
+around with the code a bit!).
 
 ```{r}
 d |> 
@@ -279,8 +279,8 @@ grade.
 
 ```{r}
 d |> 
-  select(student_id, FinalGradeCEMS) |> 
-  arrange(FinalGradeCEMS)
+  select(student_id, percentage_earned) |> 
+  arrange(percentage_earned)
 ```
 
 Note that arrange works by sorting values in ascending order (from
@@ -378,7 +378,7 @@ the names of two variables to the code below for what is now simply XXX
 (a placeholder).
 
 ```{r}
-ggplot(d, aes(x = XXX, y = XXX)) +
+ggplot(d, aes(x = (FinalGradeCEMS), y = percentage_earned)) +
   geom_point()
 ```
 
